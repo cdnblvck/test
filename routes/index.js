@@ -28,7 +28,7 @@ router.get('/candidates/search', async (req, res, next) => {
 
     let candidate = await get_candidate(skills, candidates)
 
-    return res.status(200).json(candidate|0);
+    return res.status(200).json(candidate[0]);
 
 
 });
